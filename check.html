@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 id="platform"></h1>
+    <script type="text/javascript">
+        var platform = document.getElementById('platform');
+
+        if(navigator.userAgent.match(/iPhone/i)) {
+            platform.textContent = "it's a mobile";
+        } else if(navigator.userAgent.match(/iPad/i)) {
+            platform.textContent = "it's a ipad";
+        } else if(navigator.userAgent.match(/Mac OS X/i)) {
+            platform.textContent = "it's a Mac";
+        } else {
+            platform.textContent = "it's a PC";
+        }
+    </script>
+</body>
+</html>
